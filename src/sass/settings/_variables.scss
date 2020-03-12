@@ -1,0 +1,5 @@
+$green: #0fb55d;
+
+@mixin green-gradient() {
+    background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+}
