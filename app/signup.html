@@ -23,17 +23,54 @@
 	<!-- SCRIPTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<title>AB Tools</title>
+	<title>SignUp | AB Tools Platform</title>
 </head>
-<body>
-
-
-
-
-
-
-
-
+<body class="auth-body">
+	<div class="auth">
+		<div class="auth__logo">
+			<img src="./img/logotype.png" alt="logotype">
+		</div>
+		<div class="auth__info">
+			<h1 class="title">Sign Up</h1>
+			<p class="descr">Already have an account? 
+				<a href="./login.html" class="link">Login</a>
+			</p>
+		</div>
+		<form class="auth__form">
+			<div class="form__group">
+				<label class="form__group-label" for="name">Your Name</label>
+				<input class="form__group-input input valid" id="name" type="text" placeholder="John Doe">
+			</div>
+			<div class="form__group">
+				<label class="form__group-label" for="create_password">Create password</label>
+				<input class="form__group-input input valid" id="create_password" type="text" placeholder="FKWK@42dlk0#2">
+			</div>
+			<div class="form__group form__group--invalid">
+				<label class="form__group-label" for="confirm_password">Confirm password</label>
+				<input class="form__group-input input invalid" id="confirm_password" type="text" placeholder="FKWK@42dlk0Y2">
+				<div class="error-image">
+					<img class="img" src="./img/icons/warning.svg" alt="">
+				</div>
+				<div class="error-message">Passwords do not match</div>
+			</div>
+			<div class="form__group form__group--checkbox">
+				<input id="privacy_policy" type="checkbox" checked>
+				<label class="form__group-label" for="privacy_policy">I accept <a class="link">Privacy Policy</a></label>
+			</div>
+			<button class="submit-btn" type="submit">Create account</button>
+		</form>
+		<div class="auth__social">
+			<div class="text">Or login with</div>
+			<div class="social__list">
+				<a href="#" class="social__item">
+					<img src="./img/icons/facebook.svg" alt="">
+				</a>
+				<a href="#" class="social__item">
+					<img src="./img/icons/google-plus.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
 	<script src="js/index.js"></script>
 </body>
 </html>

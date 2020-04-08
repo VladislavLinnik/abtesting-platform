@@ -1,0 +1,19 @@
+.input {
+    padding: 10px 18px;
+    height: 50px;
+    border: 1px solid rgba($grey, .7);
+    border-radius: 4px;
+
+    &.valid {
+        border-color: #0da453;
+    }
+
+    &.invalid {
+        border-color: #fb7777;
+    }
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+}

@@ -1,12 +1,223 @@
 .auth {
     margin: 0 auto;
-    padding: 35px 60px 45px;
+    padding: 35px 45px 45px;
     width: 520px;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 40px 40px 80px 0 rgba(0, 0, 0, 0.1);
 
-    &__logo {
-        margin: 0 auto;
-        display: inline-block;
+    .link {
+        color: #0da453;
+        text-decoration: underline;
     }
+
+    .loader {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sent {
+        margin-top: 50px;
+        
+        &-circle {
+            margin: 0 auto 10px;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #16d275;
+            border-radius: 50%;
+        }
+
+        &-text {
+            text-align: center;
+            color: $grey;
+            line-height: normal;
+        }
+    }
+
+    &__logo {
+        margin: 0 auto 30px;
+        max-width: 200px;
+        display: block;
+    }
+
+    &__info {
+        margin-bottom: 30px;
+        text-align: center;
+
+        .title {
+            margin-bottom: 5px;
+            font-size: 36px;
+            font-weight: 500;
+            color: #0a0d10;
+        }
+
+        .descr {
+            color: $grey;
+        }
+    }
+
+    &__form {
+
+        .form__group {
+            
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+
+            &-label {
+                margin-bottom: 4px;
+                display: inline-block;
+                color: #0a0d10;
+                cursor: pointer;
+            }
+
+            &-input {
+                width: 100%;
+                color: rgba(#0a0d10, .5);
+            }
+
+            &--invalid {
+                position: relative;
+
+                .error {
+
+                    &-image {
+                        position: absolute;
+                        top: 50%;
+                        right: 24px;
+                        
+                        img {
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+
+                    &-message {
+                        padding: 12px 25px;
+                        position: absolute;
+                        top: calc(100% - 10px);
+                        right: -50%;
+                        background-color: #ffffff;
+                        color: $grey;
+                        font-weight: 500;
+                        letter-spacing: -0.5px;
+                        transform: translateX(-50%);
+                        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            &--checkbox {
+
+                input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+
+                    &:checked + label:after {
+                        content: '';
+                        height: 12px;
+                        width: 6px;
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 6px;
+                        border: solid $green;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+                }
+                
+                label {
+                    position: relative;
+
+                    &:before {
+                        content:'';
+                        margin-right: 15px;
+                        padding: 8px;
+                        position: relative;
+                        display: inline-block;
+                        background-color: transparent;
+                        vertical-align: middle;
+                        border: solid 1px #8b8f9a;
+                        border-radius: 5px;
+                        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+        }
+
+        .submit-btn {
+            height: 50px;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+            border-radius: 5px;
+            box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .forgot_pass {
+            margin-top: 4px;
+            text-align: right;
+            font-size: 12px;
+            color: $grey;
+            cursor: pointer;
+        }
+    }
+
+    &__social {
+        margin-top: 30px;
+        text-align: center;
+
+        .text {
+            margin-bottom: 15px;
+            color: $grey;
+        }
+
+        .social {
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__item {
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                &:not(:last-child) {
+                    margin-right: 12px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.auth-body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
