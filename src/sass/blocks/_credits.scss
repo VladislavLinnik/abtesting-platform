@@ -1,0 +1,71 @@
+.credit {
+    margin-top: 50px;
+    color: #121212;
+
+    &__balance {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        .title {
+            margin-right: 20px;
+        }
+
+        .amount {
+            color: $green;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 10vmin;
+        max-width: 400px;
+
+        &__top {
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: .7;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+
+    .methods {
+        margin-bottom: 10vmin;
+
+        .method {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            &__radio {
+
+                &-text {
+                    margin-left: 10px;
+                    display: inline-block;
+                }
+            }
+
+            &__img {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .btn {
+        width: 335px;
+
+        @media screen and (max-width: 500px) {
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+        }
+    }
+}

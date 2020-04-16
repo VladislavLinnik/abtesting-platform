@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- FOR ADAPTIVE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- JQUERY -->
+	<script src="js/jquery.3.3.1.min.js"></script>
+
+	<!-- SCRIPTS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<title>Profile | AB Tools Platform</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="" class="header__logo">
+				<img src="./img/logotype.png" alt="">
+			</a>
+			<div class="header__menu">
+				<div class="menu js-menuToggle">
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+				</div>
+				<nav class="header__nav" style="display: none;">
+					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<ul class="nav__list">
+						<li class="nav__item active">
+							<a href="projects.html" class="nav__link">Projects</a>
+						</li>
+						<li class="nav__item">
+							<a href="experiments.html" class="nav__link">Experiments</a>
+						</li>
+						<li class="nav__item">
+							<a href="profile.html" class="nav__link">Profile</a>
+						</li>
+						<li class="nav__item">
+							<a href="credits.html" class="nav__link">Credits</a>
+						</li>
+						<li class="nav__item">
+							<a href="support.html" class="nav__link">Support</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="container container--page">
+			<aside class="sidebar">
+				<div class="sidebar__user sidebar--block">
+					<div class="user__info">
+						<div class="user__avatar">
+							<img class="img" src="./img/avatar.png" alt="user avatar">
+						</div>
+						<div class="user__name">Dmitriy Stokoz</div>
+					</div>
+					<a href="profile.html" class="user__settings">
+						<img src="./img/icons/settings.svg" alt="settings">
+					</a>
+				</div>
+				<div class="sidebar__balance sidebar--block">
+					<div class="balance__text">Your balance:</div>
+					<div class="balance__count">256 credits</div>
+				</div>
+				<button onclick="location.href='credits.html'" class="sidebar__buy btn">Buy more credits</button>
+			</aside>
+			<div class="page">
+				<div class="page__top">
+					<div class="space-between">
+						<h2 class="title">Edit your profile</h2>
+						<a class="project-info-link" href="projects_fill.html">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 492.004 492.004" fill="#0fb55d" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+										c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+										c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+										c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
+								</g>
+							</g>
+							</svg>
+							Back to home page
+						</a>
+					</div>
+				</div>
+				<main class="main">
+					<ul class="main__menu">
+						<li class="menu__item active">
+							<a href="profile.html" class="menu__link">Profile</a>
+						</li>
+						<li class="menu__item">
+							<a href="credits.html" class="menu__link">Credits</a>
+						</li>
+						<li class="menu__item">
+							<a href="support.html" class="menu__link">Support</a>
+						</li>
+					</ul>
+					<div class="main__info">
+						<div class="profile">
+							<div class="profile__wrap">
+								<div class="profile__column">
+									<div class="form__group">
+										<label class="label">Your name</label>
+										<input type="text" class="input" value="Dmitriy">
+									</div>
+									<div class="form__group">
+										<label class="label">Your role</label>
+										<select class="select">
+											<option disabled selected>Please select</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+									<div class="checkboxes">
+										<h2 class="checkboxes__title">Which audience(s) do you conduct research with?</h2>
+										<div class="list">
+											<div class="item">
+												<div class="custom-checkbox">
+													<input id="checkbox1" type="checkbox">
+													<label for="checkbox1">My own customers</label>
+												</div>
+											</div>
+											<div class="item">
+												<div class="custom-checkbox">
+													<input id="checkbox1" type="checkbox">
+													<label for="checkbox1">Online panel participants</label>
+												</div>
+											</div>
+											<div class="item">
+												<div class="custom-checkbox">
+													<input id="checkbox1" type="checkbox">
+													<label for="checkbox1">Agency recruited participants</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="btn">Update profile</button>
+									<button class="btn btn--white js-openChangePassword">Change the password</button>
+								</div>
+								<div class="profile__column">
+									<div class="form__group">
+										<label class="label">Your email</label>
+										<input disabled type="email" class="input" value="stokoz.dmitriy@gmail.com">
+									</div>
+									<div class="form__group">
+										<label class="label">Team size</label>
+										<div class="team-size">
+											<div class="element">1</div>
+											<div class="element">2-5</div>
+											<div class="element">6-20</div>
+											<div class="element">20+</div>
+										</div>
+									</div>
+									<div class="form__group">
+										<label class="label">Where did you first hear about us?</label>
+										<select class="select">
+											<option disabled selected>Please select</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<a class="delete-account" href="#">Permanently delete my account</a>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup change password-->
+	<div class="popup__overlay"></div>
+
+	<div class="popup change-password-popup">
+		<div class="js-changePassStepOne">
+			<h2 class="title">Change the password</h2>
+			<p class="descr">Please enter your old password</p>
+			<div class="form-group">
+				<label class="form-group__label">Confirm your old password</label>
+				<input type="password" class="input form-group__input" value="12345678">
+			</div>
+			<button class="btn js-openChangePassStepTwo">Continue</button>
+		</div>
+		<div class="js-changePassStepTwo" style="display: none;">
+			<h2 class="title">Change the password</h2>
+			<p class="descr">Please create your new password</p>
+			<div class="form-group">
+				<label class="form-group__label">Create your new password</label>
+				<input type="password" class="input form-group__input" value="12345678">
+			</div>
+			<div class="form-group">
+				<label class="form-group__label">Confirm your new password</label>
+				<input type="password" class="input form-group__input" value="12345678">
+			</div>
+			<button class="btn js-openChangePassStepTwo">Continue</button>
+		</div>
+		<div class="js-changePassStepThree" style="display: none;">
+			<h2 class="title">Loading</h2>
+			<p class="descr">Creating experiment for you…</p>
+			<img class="loader" src="./img/loader.svg" alt="loader">
+		</div>
+		<div class="js-changePassStepResult" style="display: none;">
+			<h2 class="title title--mb">Password was changed</h2>
+			<div class="result">
+				<img src="./img/icons/check.svg" class="result__img">
+				<p class="result__text">You have successfully changed the password for your account.</p>
+			</div>
+		</div>
+	</div>
+	<!-- popup change password end -->
+	
+	<script src="js/index.js"></script>
+	<script>
+		$('.js-openChangePassword').click(function(){
+			$('.popup, .popup__overlay').fadeIn(400); 
+		});
+
+		$('.popup__overlay').click(function(){
+			$('.popup, .popup__overlay').fadeOut(400);
+		});
+		
+		$(document).on('keyup', function(e) {
+			if (e.key === "Escape") {
+				$('.popup, .popup__overlay').fadeOut(400);
+			}
+		});
+
+		$('.js-openChangePassStepTwo').on('click', () => {
+			$('.js-changePassStepOne').hide();
+			$('.js-changePassStepTwo').show()
+		});
+
+		$('.js-openChangePassStepTwo').on('click', function() {
+			$('.js-changePassStepTwo').hide();
+			$('.js-changePassStepThree').show();
+
+			setTimeout(function() {
+				$('.js-changePassStepThree').hide();
+				$('.js-changePassStepResult').show();
+			}, 2000);
+		});
+	</script>
+</body>
+</html>

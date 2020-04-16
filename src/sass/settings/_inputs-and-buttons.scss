@@ -1,8 +1,22 @@
 .input {
     padding: 10px 18px;
     height: 50px;
+    color: rgba($grey, .7);
     border: 1px solid rgba($grey, .7);
     border-radius: 4px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 8px 12px;
+    }
+    
+    &::placeholder {
+        color: rgba($grey, .5);
+    }
+
+    &[disabled] {
+        background-color: rgba(#e4e4e4, .7);
+        cursor: not-allowed;
+    }
 
     &.valid {
         border-color: #0da453;
@@ -13,7 +27,126 @@
     }
 }
 
-input, button {
+.textarea {
+    padding: 10px 18px;
+    height: 50px;
+    color: rgba($grey, .7);
+    border: 1px solid rgba($grey, .7);
+    border-radius: 4px;
+    resize: none;
+
+    @media screen and (max-width: 1024px) {
+        padding: 8px 12px;
+    }
+
+    &::placeholder {
+        color: rgba($grey, .5);
+    }
+}
+
+.btn {
+    height: 50px;
+    background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+
+    &--white {
+        background-color: #fff;
+        background-image: none;
+        color: #16d275;
+    }
+}
+
+input, textarea, button {
     font-family: inherit;
     font-size: inherit;
+}
+
+// Custom input checkbox
+.custom-checkbox {
+
+    input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+
+        &:checked + label:after {
+            content: '';
+            height: 12px;
+            width: 6px;
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 6px;
+            border: solid $green;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    
+    label {
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:before {
+            content:'';
+            margin-right: 15px;
+            padding: 8px;
+            position: relative;
+            display: inline-block;
+            background-color: transparent;
+            vertical-align: middle;
+            border: solid 1px #8b8f9a;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            -webkit-appearance: none;
+        }
+    }
+}
+
+// Custom input radio
+.custom-radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.custom-radio, .custom-radio-label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox-custom-label, .custom-radio-label {
+    position: relative;
+}
+
+.custom-radio + .custom-radio-label:before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 9px;
+    border: solid 1px #8b8f9a;
+}
+
+.custom-radio + .custom-radio-label:before {
+    border-radius: 50%;
+}
+
+.custom-radio:checked + .custom-radio-label:before {
+    background: rgba(#0a0d10, .7);
+    box-shadow: inset 0px 0px 0px 4px #fff;
 }

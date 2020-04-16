@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- FOR ADAPTIVE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- JQUERY -->
+	<script src="js/jquery.3.3.1.min.js"></script>
+
+	<!-- SCRIPTS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<title>Create experiment step 2 | AB Tools Platform</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="" class="header__logo">
+				<img src="./img/logotype.png" alt="">
+			</a>
+			<div class="header__menu">
+				<div class="menu js-menuToggle">
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+				</div>
+				<nav class="header__nav" style="display: none;">
+					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<ul class="nav__list">
+						<li class="nav__item active">
+							<a href="projects.html" class="nav__link">Projects</a>
+						</li>
+						<li class="nav__item">
+							<a href="experiments.html" class="nav__link">Experiments</a>
+						</li>
+						<li class="nav__item">
+							<a href="profile.html" class="nav__link">Profile</a>
+						</li>
+						<li class="nav__item">
+							<a href="credits.html" class="nav__link">Credits</a>
+						</li>
+						<li class="nav__item">
+							<a href="support.html" class="nav__link">Support</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="container container--page">
+			<aside class="sidebar">
+				<div class="sidebar__user sidebar--block">
+					<div class="user__info">
+						<div class="user__avatar">
+							<img class="img" src="./img/avatar.png" alt="user avatar">
+						</div>
+						<div class="user__name">Dmitriy Stokoz</div>
+					</div>
+					<a href="profile.html" class="user__settings">
+						<img src="./img/icons/settings.svg" alt="settings">
+					</a>
+				</div>
+				<div class="sidebar__balance sidebar--block">
+					<div class="balance__text">Your balance:</div>
+					<div class="balance__count">256 credits</div>
+				</div>
+				<button onclick="location.href='credits.html'" class="sidebar__buy btn">Buy more credits</button>
+			</aside>
+			<div class="page">
+				<div class="page__top">
+					<div class="space-between create-experiment">
+						<h2 class="title">Create a new experiment</h2>
+						<div class="steps">
+							<div class="step active">
+								<p class="step__text">Step #1</p>
+								<div class="step__sign active"></div>
+							</div>
+							<div class="step active">
+								<p class="step__text">Step #2</p>
+								<div class="step__sign"></div>
+							</div>
+							<div class="step">
+								<p class="step__text">Step #3</p>
+								<div class="step__sign"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<main class="main">
+					<ul class="main__menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link">Projects</a>
+						</li>
+						<li class="menu__item active">
+							<a href="experiments.html" class="menu__link">Experiments</a>
+						</li>
+					</ul>
+					<div class="main__info experiment">
+						<div class="experiment__create step2">
+							<div class="section">
+								<h2 class="section__title">Pushares</h2>
+								<div class="section__action">
+									<img src="./img/icons/copy.png">Clone this
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="app-title" class="label">App Title (50 characters)</label>
+										<input id="app-title" type="text" class="input" value="Overdrive City – Car Tycoon Games">
+									</div>
+								</div>
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="dev-name" class="label">Developer name (30 characters)</label>
+										<input id="dev-name" type="text" class="input" value="Gameloft SE">
+									</div>
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="subtitle" class="label">Subtitle</label>
+										<textarea id="subtitle" class="textarea"></textarea>
+									</div>
+								</div>
+								<div class="group__column">
+									<div class="group2-wrap">
+										<div class="line">
+											<div class="line--checkbox">
+												<input type="checkbox" id="check1">
+												<label class="form__group-label" for="check1"></label>
+												<div class="text">Price</div>
+											</div>
+											<div class="line--counter">
+												<label class="label">App is free</label>
+												<input class="input" type="text" value="3,99">
+											</div>
+										</div>
+										<div class="line">
+											<div class="line--checkbox">
+												<input type="checkbox" id="check2">
+												<label class="form__group-label" for="check2"></label>
+												<div class="text">Offers in-app <br> purchases</div>
+											</div>
+											<div class="line--counters">
+												<div class="line--counter">
+													<label class="label">App is free</label>
+													<input class="input" type="text" value="3,99">
+												</div>
+												<div class="line--counter">
+													<label class="label">App is free</label>
+													<input class="input" type="text" value="3,99">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="section">
+								<h2 class="section__title">Whats new</h2>
+								<div class="section__action">
+									<img src="./img/icons/copy.png">Clone this
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="group3-wrap">
+										<div class="item">
+											<label class="label">Version</label>
+											<input type="text" class="input" value="3.01">
+										</div>
+										<div class="item">
+											<label class="label">Date</label>
+											<select class="select">
+												<option selected disabled>02.03.2020</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="group__column">
+									<div class="group4-wrap">
+										<label class="label">Languages</label>
+										<div class="languages">
+											<div class="language">
+												<div class="language__name">Russian</div>
+												<div class="language__remove">x</div>
+											</div>
+											<div class="language">
+												<div class="language__name">English</div>
+												<div class="language__remove">x</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="subtitle" class="label">Subtitle</label>
+										<textarea id="subtitle" class="textarea"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="section">
+								<h2 class="section__title">Rating</h2>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="group5-wrap">
+										<div class="line--counter">
+											<label class="label">Age Rating</label>
+											<input class="input" type="text" value="3">
+										</div>
+										<div class="line--counter">
+											<label class="label">Votes</label>
+											<input class="input" type="text" value="159">
+										</div>
+										<div class="line--counter">
+											<label class="label">Rating</label>
+											<input class="input" type="text" value="159">
+										</div>
+									</div>
+								</div>
+								<div class="group__column group__column--asc">
+									<div class="group6-wrap">
+										<div class="line--checkbox">
+											<input type="checkbox" id="check3">
+											<label class="form__group-label" for="check3"></label>
+											<div class="text">Support iPhone X Gallery</div>
+										</div>
+										<div class="rating">
+											<div class="rating-text">Rating</div>
+											<div class="rating-stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="rating">
+									<div class="rating__title">Reviews by rating</div>
+									<div class="rating__counters">
+										<div class="counter">
+											<div class="counter__stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+											<input type="text" class="input counter__input" value="1731">
+										</div>
+										<div class="counter">
+											<div class="counter__stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+											<input type="text" class="input counter__input" value="250">
+										</div>
+										<div class="counter">
+											<div class="counter__stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+											<input type="text" class="input counter__input" value="83">
+										</div>
+										<div class="counter">
+											<div class="counter__stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+											<input type="text" class="input counter__input" value="21">
+										</div>
+										<div class="counter">
+											<div class="counter__stars">
+												<img src="./img/icons/star-rating.png">
+											</div>
+											<input type="text" class="input counter__input" value="19">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="section">
+								<h2 class="section__title">Reviews</h2>
+								<div class="section__action">
+									<img src="./img/icons/copy.png">Clone this
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="title" class="label">Title (50 characters)</label>
+										<input id="title" type="text" class="input" value="Good">
+									</div>
+								</div>
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="user-name" class="label">User name (30 characters)</label>
+										<input id="user-name" type="text" class="input" value="GamerPro2">
+									</div>
+								</div>
+							</div>
+
+							<div class="group">
+								<div class="group__column">
+									<div class="input-wrap">
+										<label for="review-text" class="label">Review text</label>
+										<textarea id="review-text" class="textarea"></textarea>
+									</div>
+								</div>
+								<div class="group__column">
+									<div class="group7-wrap">
+										<label class="label">Date</label>
+										<select class="select">
+											<option selected disabled>02.03.2020</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<div class="rating">
+											<div class="rating-text">Rating</div>
+											<div class="rating-stars">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+												<img src="./img/icons/star-rating.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="add-answer">Add answer from developer</div>
+
+							<div class="section">
+								<h2 class="section__title">Screenshot</h2>
+								<div class="section__action">Add new device</div>
+							</div>
+							
+							<div class="group group--screenshot">
+								<div class="group__column group__column--asc">
+									<label class="label">Choose the device</label>
+									<select class="select">
+										<option>IPhone</option>
+										<option>IPhone</option>
+										<option>IPhone</option>
+									</select>
+								</div>
+								<div class="group__column">
+									<div class="screenshot">
+										<img class="screenshot-img" src="./img/picture.png">
+									</div>
+								</div>
+							</div>
+
+							<div class="group group--screenshot">
+								<div class="group__column group__column--asc">
+									<label class="label">Choose the device</label>
+									<select class="select">
+										<option>IPad</option>
+										<option>IPad</option>
+										<option>IPad</option>
+									</select>
+								</div>
+								<div class="group__column">
+									<div class="screenshot">
+										<div class="screenshot-text">Upload screenshots by dropping out <br> 
+											or <a class="link">brows for them</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="step__control">
+								<button class="btn">Add to draft</button>
+								<button onclick="location.href='create_experiment_step3.html'" class="btn">Next step</button>
+								<a href="create_experiment_step1.html" class="link-previous">Back to previous step</a>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

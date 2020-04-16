@@ -1,10 +1,17 @@
 .auth {
     margin: 0 auto;
     padding: 35px 45px 45px;
+    max-height: 90vh;
     width: 520px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 40px 40px 80px 0 rgba(0, 0, 0, 0.1);
+    overflow: auto;
+
+    @media screen and (max-width: 768px) {
+        padding: 20px 25px 25px;
+        width: 90%;
+    }
 
     .link {
         color: #0da453;
@@ -54,6 +61,10 @@
             font-size: 36px;
             font-weight: 500;
             color: #0a0d10;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 10px;
+            }
         }
 
         .descr {
@@ -158,16 +169,7 @@
         }
 
         .submit-btn {
-            height: 50px;
             width: 100%;
-            color: #fff;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 500;
-            background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
-            border-radius: 5px;
-            box-shadow: 20px 20px 40px 0 rgba(0, 0, 0, 0.2);
-            cursor: pointer;
         }
 
         .forgot_pass {

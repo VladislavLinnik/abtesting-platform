@@ -1,0 +1,100 @@
+.header {
+    padding: 18px 0;
+    background-color: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.06);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo {
+        display: block;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__menu {
+        position: relative;
+
+        .menu {
+            cursor: pointer;
+
+            &__line {
+                height: 2px;
+                width: 20px;
+                background-color: #10be62;
+
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        padding: 70px 35px;
+        width: 280px;
+        position: absolute;
+        top: -20px;
+        right: -35px;
+        border-radius: 6px;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.06);
+        background-color: #fff;
+        z-index: 99;
+
+        .nav {
+
+            &__item {
+                color: rgba(#111, .7);
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.5;
+                transition: all .3s;
+
+                &.active {
+                    position: relative;
+                    color: #0fb55d;
+
+                    &::before {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        position: absolute;
+                        top: 50%;
+                        left: -15px;
+                        background-color: #0fb55d;
+                        border-radius: 6px;
+                        box-shadow: 0 9px 18px -1px rgba(0, 0, 0, 0.08);
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:hover {
+                    color: #0fb55d;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            &__link {
+                
+            }
+        }
+
+        &-crossmark {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            font-size: 20px;
+            color: #0fb55d;
+            cursor: pointer;
+        }
+    }
+}

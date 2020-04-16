@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- FOR ADAPTIVE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- JQUERY -->
+	<script src="js/jquery.3.3.1.min.js"></script>
+
+	<!-- SCRIPTS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<title>Projects | AB Tools Platform</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="" class="header__logo">
+				<img src="./img/logotype.png" alt="">
+			</a>
+			<div class="header__menu">
+				<div class="menu js-menuToggle">
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+					<div class="menu__line"></div>
+				</div>
+				<nav class="header__nav" style="display: none;">
+					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<ul class="nav__list">
+						<li class="nav__item active">
+							<a href="projects.html" class="nav__link">Projects</a>
+						</li>
+						<li class="nav__item">
+							<a href="experiments.html" class="nav__link">Experiments</a>
+						</li>
+						<li class="nav__item">
+							<a href="profile.html" class="nav__link">Profile</a>
+						</li>
+						<li class="nav__item">
+							<a href="credits.html" class="nav__link">Credits</a>
+						</li>
+						<li class="nav__item">
+							<a href="support.html" class="nav__link">Support</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="container container--page">
+			<aside class="sidebar">
+				<div class="sidebar__user sidebar--block">
+					<div class="user__info">
+						<div class="user__avatar">
+							<img class="img" src="./img/avatar.png" alt="user avatar">
+						</div>
+						<div class="user__name">Dmitriy Stokoz</div>
+					</div>
+					<a href="profile.html" class="user__settings">
+						<img src="./img/icons/settings.svg" alt="settings">
+					</a>
+				</div>
+				<div class="sidebar__balance sidebar--block">
+					<div class="balance__text">Your balance:</div>
+					<div class="balance__count">256 credits</div>
+				</div>
+				<button onclick="location.href='credits.html'" class="sidebar__buy btn">Buy more credits</button>
+			</aside>
+			<div class="page">
+				<div class="page__top">
+					<div class="search">
+						<div class="search__block">
+							<input type="text" class="search__input" placeholder="Search">
+							<img class="search__sign" src="./img/icons/search.svg" alt="search">
+						</div>
+						<div class="search__block">
+							<select class="select sort" name="sort" id="sort">
+								<option disabled selected>Sort by</option>
+								<option value="asc">Asc</option>
+								<option value="desc">Desc</option>
+							</select>
+							<!-- <img class="search__sign" src="./img/icons/sort.svg" alt="sort"> -->
+						</div>
+					</div>
+				</div>
+				<main class="main">
+					<ul class="main__menu">
+						<li class="menu__item active">
+							<a href="#" class="menu__link">Projects</a>
+						</li>
+						<li class="menu__item">
+							<a href="experiments.html" class="menu__link">Experiments</a>
+						</li>
+					</ul>
+					<div class="main__info project">
+						<div class="project__blank">
+							<img src="./img/no_projects.svg" alt="" class="project__blank-img">
+							<h2 class="project__blank-text">You have no projects yet</h2>
+							<button class="project__blank--btn btn js-createProject">Create a new project</button>
+						</div>
+						<div class="project__create" style="display: none;">
+							<h2 class="project__create-text">Add link from Apple Store or Google Play</h2>
+							<div class="project__create-method">
+								<input class="input" type="text" placeholder="Past your URL">
+								<div class="manually">or &nbsp; &nbsp; &nbsp;<span class="create-manually js-openCreateManually">Create manually</span></div>
+							</div>
+							<button class="btn js-openCreateProject">Confirm</button>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup create button-->
+	<div class="popup__overlay"></div>
+
+	<div class="popup create-project-popup">
+		<div class="js-createStepOne">
+			<h2 class="title">Would you like to create experiment immediately?</h2>
+			<div style="text-align: left;">
+				<label class="select-text" for="testElement">Element you’d like to test</label>
+				<select class="select" name="testElement" id="testElement">
+					<option disabled selected>Please select</option>
+					<option value="first">First one</option>
+					<option value="second">Second one</option>
+				</select>
+			</div>
+			<h2 class="variants-text">The data should be put in varaint</h2>
+			<div class="variants">
+				<div class="variant">A</div>
+				<div class="variant">B</div>
+				<div class="variant active">A/B</div>
+			</div>
+			<button class="btn js-createExperiment">Create experiment</button>
+			<div class="only-project">Create only project</div>
+		</div>
+		<div class="js-createStepTwo" style="display: none;">
+			<h2 class="title-two">Loading</h2>
+			<p class="descr-two">Creating experiment for you…</p>
+			<img src="./img/loader.svg" alt="loader">
+		</div>
+		<div class="js-createStepThree" style="display: none;">
+			<h2 class="title-two">Great!</h2>
+			<p class="descr-two">The experiment already exist in the Experiments tab</p>
+			<button class="btn" onclick="location.href='experiments.html'">Go to the experiments page</button>
+		</div>
+	</div>
+	<!-- popup create button end -->
+
+	<!-- popup manually-->
+	<div class="popup2 create-manually-project-popup">
+		<h2 class="title">Create a new project</h2>
+		<p class="stores-text">Choose store *</p>
+		<div class="stores">
+			<div class="store">
+				<img src="./img/icons/google-play.svg" alt="" class="store-img">
+				<h3 class="store-name">Google Play</h3>
+			</div>
+			<div class="store">
+				<img src="./img/icons/apple-logo.svg" alt="" class="store-img">
+				<h3 class="store-name">App Store</h3>
+			</div>
+		</div>
+		<div class="image">
+			<img class="image-img" src="./img/square.png" alt="">
+			<p class="image-text">Only .png 512x512</p>
+		</div>
+		<div class="project-name">
+			<label for="project-name" class="project-name__label">Project name</label>
+			<input type="text" class="input" id="project-name" value="Project #1">
+		</div>
+		<div class="options">
+			<div class="option">
+				<h3 class="option__name">Category</h3>
+				<select class="select">
+					<option disabled selected>Please select</option>
+					<option>One</option>
+					<option>Two</option>
+					<option>Three</option>
+				</select>
+			</div>
+			<div class="option">
+				<h3 class="option__name">Language</h3>
+				<select class="select">
+					<option disabled selected>Please select</option>
+					<option>One</option>
+					<option>Two</option>
+					<option>Three</option>
+				</select>
+			</div>
+		</div>
+		<button class="btn" onclick="location.href='projects_fill.html'">Add a new project</button>
+	</div>
+	<!-- popup manually end -->
+
+	<script src="js/index.js"></script>
+	<script>
+		$('.js-openCreateProject').click(function(){
+			$('.popup, .popup__overlay').fadeIn(400); 
+		});
+
+		$('.popup__overlay').click(function(){
+			$('.popup, .popup__overlay').fadeOut(400);
+		});
+
+		$('.js-openCreateManually').click(function(){
+			$('.popup2, .popup__overlay').fadeIn(400); 
+		});
+
+		$('.popup__overlay').click(function(){
+			$('.popup2, .popup__overlay').fadeOut(400);
+		});
+		
+		$(document).on('keyup', function(e) {
+			if (e.key === "Escape") {
+				$('.popup, .popup__overlay').fadeOut(400);
+			}
+		});
+
+		$('.js-createProject').on('click', function() {
+			$('.project__blank').hide();
+			$('.project__create').show();
+		});
+
+		$('.js-createExperiment').on('click', function() {
+			$('.js-createStepOne').hide();
+			$('.js-createStepTwo').show();
+
+			setTimeout(function() {
+				$('.js-createStepTwo').hide();
+				$('.js-createStepThree').show();
+			}, 2000);
+		});
+	</script>
+</body>
+</html>

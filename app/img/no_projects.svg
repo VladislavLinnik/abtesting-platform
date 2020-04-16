@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="302px" height="302px" viewBox="0 0 302 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="89.9898483 127.329793 0.0679362671 127.329793 0.0679362671 24.0356846 13.6533536 9.13228216 89.9898483 9.13228216"></polygon>
+        <filter x="-53.4%" y="-35.5%" width="206.8%" height="181.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0.0312139605 24.0356846 13.6166313 9.13228216 13.6166313 24.0356846"></polygon>
+        <filter x="-132.5%" y="-80.5%" width="365.0%" height="341.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="117.909818 118.349046 27.9879059 118.349046 27.9879059 15.053112 41.5751593 0.15153527 117.909818 0.15153527"></polygon>
+        <filter x="-53.4%" y="-35.5%" width="206.8%" height="181.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="27.9511836 15.053112 41.538437 0.15153527 41.538437 15.053112"></polygon>
+        <filter x="-132.5%" y="-80.5%" width="365.0%" height="341.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Platform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-g-003_Projects-(clean)" transform="translate(-991.000000, -389.000000)">
+            <g id="Group-3" transform="translate(684.000000, 205.000000)">
+                <g id="Group-2" transform="translate(307.000000, 184.000000)">
+                    <g id="Group">
+                        <g id="Group-4">
+                            <circle id="Oval" fill="#11BE62" opacity="0.2" cx="151" cy="151" r="151"></circle>
+                            <g id="documents" transform="translate(91.000000, 85.000000)">
+                                <g id="undraw_files1_9ool" transform="translate(1.652504, 1.278008)">
+                                    <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="36.0888467" y="32.200332" width="16.3175569" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="36.0888467" y="43.633029" width="16.3175569" height="7.34854772"></rect>
+                                    <g id="Path" fill-rule="nonzero">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#FAFAFA" xlink:href="#path-1"></use>
+                                    </g>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="8.84640364" y="21.8922822" width="43.8078756" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="8.93453718" y="41.9990041" width="32.1026404" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#16D275" fill-rule="nonzero" x="8.93453718" y="72.2129461" width="72.0087709" height="26.9458921"></rect>
+                                    <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="64.6257511" y="21.9945228" width="16.3175569" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#F5F5F5" fill-rule="nonzero" x="64.6257511" y="33.4253942" width="16.3175569" height="7.34854772"></rect>
+                                    <g id="Path" fill-rule="nonzero">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                        <use fill="#EEEEEE" xlink:href="#path-3"></use>
+                                    </g>
+                                    <g id="Path" fill-rule="nonzero">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                        <use fill="#FAFAFA" xlink:href="#path-5"></use>
+                                    </g>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="36.7682094" y="12.9097095" width="43.8078756" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="36.8563429" y="33.0182573" width="32.1026404" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#16D275" fill-rule="nonzero" x="36.8563429" y="63.2303734" width="72.0087709" height="26.9458921"></rect>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="92.5475569" y="13.0119502" width="16.3175569" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="92.5475569" y="24.4428216" width="16.3175569" height="7.34854772"></rect>
+                                    <rect id="Rectangle" fill="#E0E0E0" fill-rule="nonzero" x="92.5475569" y="35.8755187" width="16.3175569" height="7.34854772"></rect>
+                                    <g id="Path" fill-rule="nonzero">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                        <use fill="#EEEEEE" xlink:href="#path-7"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

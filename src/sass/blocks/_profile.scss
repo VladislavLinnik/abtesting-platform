@@ -1,0 +1,113 @@
+.profile {
+    color: #121212;
+
+    &__wrap {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 35px;
+
+        @media screen and (max-width: 1190px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 15px;
+        }
+    }
+
+    &__column {
+
+        &:first-of-type {
+
+            @media screen and (max-width: 1190px) {
+                order: 2;
+            }
+        }
+
+        .form {
+
+            &__group {
+
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+
+                .label {
+                    margin-bottom: 5px;
+                    display: block;
+                    opacity: .7;
+                }
+
+                .input, .select {
+                    width: 100%;
+                }
+
+                .team-size {
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    border: solid 1px rgba(#595f6f, .7);
+                    border-radius: 4px;
+
+                    .element {
+                        height: 100%;
+                        width: 25%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: .5;
+                        cursor: pointer;
+
+                        &:not(:last-child) {
+                            border-right: solid 1px rgba(#595f6f, .7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkboxes {
+        margin-bottom: 50px;
+
+        &__title {
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .list {
+
+            .item {
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    .btn {
+        width: 335px;
+        display: block;
+
+        @media screen and (max-width: 1190px) {
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 260px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .delete-account {
+        margin-top: 30px;
+        display: block;
+        text-align: right;
+        font-size: 16px;
+        color: #0fb55d;
+        font-weight: 500;
+    }
+}
