@@ -1,5 +1,21 @@
-$('.js-menuToggle').on('click', function() {
+const menuBtn = $('.js-menuToggle'),
+      menu = $('.header__nav');
+
+$(menuBtn).on('click', function() {
     $('.header__nav').toggle();
+    $(menuBtn).toggleClass('is-active');
+});
+
+$(document).click(function (e) {
+    if ( !menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+        menu.hide();
+        menuBtn.removeClass('is-active');
+    };
+});
+
+$('input[type=password]').on('input', function(e) {
+    e.target.type = 'text';
+    e.target.value = "*".repeat(e.target.value.length);
 });
 
 // custom select
@@ -27,6 +43,10 @@ $('select').each(function(){
     var $listItems = $list.children('li');
   
     $styledSelect.click(function(e) {
+        // hide header menu
+        $('.header__nav').hide();
+        $(menuBtn).toggleClass('is-active');
+        // hide header menu end
         e.stopPropagation();
         $('div.select-styled.active').not(this).each(function(){
             $(this).removeClass('active').next('ul.select-options').hide();

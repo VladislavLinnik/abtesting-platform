@@ -58,6 +58,25 @@ body {
             color: #121212;
             box-shadow: 0 9px 18px -1px rgba(0, 0, 0, 0.08);
             border: none;
+
+            &::before {
+                content:"";
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-color: transparent transparent rgba(#11be62, .42);
+                position: absolute;
+                top: 9px;
+                right: 18px;
+            }
+
+            &.active, &:active {
+
+                &:after {
+                    border-color: rgba(#11be62, .42) transparent transparent transparent !important;
+                    top: 24px !important;
+                }
+            }
         }
     }
 
@@ -135,6 +154,7 @@ body {
             color: #fff;
             background: $green;
           }
+
           &[rel="hide"] {
             display: none;
           }

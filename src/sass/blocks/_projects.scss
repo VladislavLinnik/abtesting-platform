@@ -97,16 +97,23 @@
                     grid-row-gap: 10px;
                 }
 
+                &.active {
+
+                    .link img {
+                        transform: rotate(90deg);
+                    }
+                    
+                    &.projects__item--dropdown .item__info {
+                        display: grid;
+                    }
+                }
+
                 &--dropdown {
                     display: block;
                     padding: 0;
 
                     @media screen and (max-width: 900px) {
                         padding: 0 !important;
-                    }
-                    
-                    .link.active img {
-                        transform: rotate(90deg);
                     }
                     
                     .item {
@@ -131,10 +138,10 @@
                         }
                         
                         &__info {
+                            display: none;
                             padding: 20px 35px 12px;
                             width: 100%;
                             position: relative;
-                            display: grid;
                             grid-template-columns: 1fr 1fr 1fr 130px;
                             grid-column-gap: 10px;
                             align-items: center;
@@ -186,6 +193,7 @@
 
                                 &__name {
                                     margin-bottom: 3px;
+                                    font-weight: 500;
                                 }
 
                                 &__status {

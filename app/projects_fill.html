@@ -38,7 +38,9 @@
 					<div class="menu__line"></div>
 				</div>
 				<nav class="header__nav" style="display: none;">
-					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<div class="header__nav-crossmark js-menuToggle">
+						<img src="./img/menu-crossmark.svg" alt="">
+					</div>
 					<ul class="nav__list">
 						<li class="nav__item active">
 							<a href="projects.html" class="nav__link">Projects</a>
@@ -110,7 +112,7 @@
 					<div class="main__info project">
 						<div class="project__fill">
 							<ul class="projects__list">
-								<li class="projects__item projects__item--dropdown dropdown-without-btn">
+								<li class="projects__item active projects__item--dropdown dropdown-without-btn">
 									<div class="item">
 										<div class="project__info">
 											<img class="img" src="./img/project1.png">
@@ -145,7 +147,7 @@
 											<div class="delete">
 												<img src="./img/icons/delete.png">
 											</div>
-											<a class="link active" href="project_info.html">
+											<a class="link active">
 												<img src="./img/icons/arrow-right.svg">
 											</a>
 										</div>
@@ -166,7 +168,7 @@
 											</div>
 											<div class="visitor">
 												<div class="visitor__number">0</div>
-												<div class="visitor__text">Visitors</div>
+												<div class="visitor__text">Clicks</div>
 											</div>
 										</div>
 									</div>
@@ -205,7 +207,7 @@
 										<div class="delete">
 											<img src="./img/icons/delete.png">
 										</div>
-										<a class="link" href="project_info.html">
+										<a class="link">
 											<img src="./img/icons/arrow-right.svg">
 										</a>
 									</div>
@@ -218,6 +220,14 @@
 		</div>
 	</div>
 
+	<script>
+		$('.project__fill .projects__item .project__actions .link').on('click', function() {
+			let elem = $(this).closest('.projects__item');
+			if ($(elem[0]).children('.item__info').length) {
+				elem.toggleClass('active');
+			}
+		});
+	</script>
 	<script src="js/index.js"></script>
 </body>
 </html>

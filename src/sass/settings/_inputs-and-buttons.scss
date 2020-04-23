@@ -46,7 +46,10 @@
 
 .btn {
     height: 50px;
+    background-color: #0fb55d;
     background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+    background-image: -webkit-linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+    background-image: -moz-linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -65,6 +68,10 @@
 input, textarea, button {
     font-family: inherit;
     font-size: inherit;
+}
+
+input[type="password"] {
+    -webkit-text-security: square;
 }
 
 // Custom input checkbox
@@ -89,13 +96,13 @@ input, textarea, button {
             border: solid $green;
             border-width: 0 2px 2px 0;
             transform: rotate(45deg);
+            cursor: pointer;
         }
     }
     
     label {
         position: relative;
         vertical-align: middle;
-        cursor: pointer;
 
         &:before {
             content:'';
@@ -103,12 +110,12 @@ input, textarea, button {
             padding: 8px;
             position: relative;
             display: inline-block;
-            background-color: transparent;
+            background-color: #fff;
             vertical-align: middle;
             border: solid 1px #8b8f9a;
             border-radius: 5px;
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-            -webkit-appearance: none;
+            cursor: pointer;
         }
     }
 }

@@ -168,7 +168,6 @@
                 label {
                     position: relative;
                     color: #121212;
-                    cursor: pointer;
 
                     &:before {
                         content:'';
@@ -598,6 +597,10 @@
                 .toggler {
                     transform: rotate(90deg);
                 }
+
+                .category__body {
+                    display: block;
+                }
             }
 
             &__top {
@@ -629,6 +632,7 @@
 
             &__body {
                 margin-top: 35px;
+                display: none;
 
                 .line {
                     display: grid;

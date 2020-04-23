@@ -38,7 +38,9 @@
 					<div class="menu__line"></div>
 				</div>
 				<nav class="header__nav" style="display: none;">
-					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<div class="header__nav-crossmark js-menuToggle">
+						<img src="./img/menu-crossmark.svg" alt="">
+					</div>
 					<ul class="nav__list">
 						<li class="nav__item active">
 							<a href="projects.html" class="nav__link">Projects</a>
@@ -141,14 +143,14 @@
 											</div>
 											<div class="item">
 												<div class="custom-checkbox">
-													<input id="checkbox1" type="checkbox">
-													<label for="checkbox1">Online panel participants</label>
+													<input id="checkbox2" type="checkbox">
+													<label for="checkbox2">Online panel participants</label>
 												</div>
 											</div>
 											<div class="item">
 												<div class="custom-checkbox">
-													<input id="checkbox1" type="checkbox">
-													<label for="checkbox1">Agency recruited participants</label>
+													<input id="checkbox3" type="checkbox">
+													<label for="checkbox3">Agency recruited participants</label>
 												</div>
 											</div>
 										</div>
@@ -213,7 +215,7 @@
 				<label class="form-group__label">Confirm your new password</label>
 				<input type="password" class="input form-group__input" value="12345678">
 			</div>
-			<button class="btn js-openChangePassStepTwo">Continue</button>
+			<button class="btn js-openChangePassStepThree">Continue</button>
 		</div>
 		<div class="js-changePassStepThree" style="display: none;">
 			<h2 class="title">Loading</h2>
@@ -232,6 +234,11 @@
 	
 	<script src="js/index.js"></script>
 	<script>
+		$('.team-size .element').on('click', function() {
+			$('.team-size .element').removeClass('active');
+			$(this).addClass('active');
+		});
+		
 		$('.js-openChangePassword').click(function(){
 			$('.popup, .popup__overlay').fadeIn(400); 
 		});
@@ -251,7 +258,7 @@
 			$('.js-changePassStepTwo').show()
 		});
 
-		$('.js-openChangePassStepTwo').on('click', function() {
+		$('.js-openChangePassStepThree').on('click', function() {
 			$('.js-changePassStepTwo').hide();
 			$('.js-changePassStepThree').show();
 

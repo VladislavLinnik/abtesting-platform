@@ -38,7 +38,9 @@
 					<div class="menu__line"></div>
 				</div>
 				<nav class="header__nav" style="display: none;">
-					<div class="header__nav-crossmark js-menuToggle">&#10006;</div>
+					<div class="header__nav-crossmark js-menuToggle">
+						<img src="./img/menu-crossmark.svg" alt="">
+					</div>
 					<ul class="nav__list">
 						<li class="nav__item">
 							<a href="projects.html" class="nav__link">Projects</a>
@@ -87,7 +89,7 @@
 				</div>
 				<div class="experiment__info">
 					<ul class="category__list">
-						<li class="category active">
+						<li class="category">
 							<div class="category__top">
 								<h3 class="title">Pushares</h3>
 								<div class="toggler">
@@ -129,7 +131,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="category active">
+						<li class="category">
 							<div class="category__top">
 								<h3 class="title">Whats new</h3>
 								<div class="toggler">
@@ -171,7 +173,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="category active">
+						<li class="category">
 							<div class="category__top">
 								<h3 class="title">Rating</h3>
 								<div class="toggler">
@@ -288,7 +290,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="category active">
+						<li class="category">
 							<div class="category__top">
 								<h3 class="title">Reviews</h3>
 								<div class="toggler">
@@ -344,7 +346,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="category active">
+						<li class="category">
 							<div class="category__top">
 								<h3 class="title">Screenshots</h3>
 								<div class="toggler">
@@ -402,6 +404,11 @@
 		</div>
 	</div>
 	
+	<script>
+		$('.category__top .toggler').on('click', function() {
+			$(this).closest('.category').toggleClass('active');
+		});
+	</script>
 	<script src="js/index.js"></script>
 </body>
 </html>
