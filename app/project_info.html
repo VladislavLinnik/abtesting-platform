@@ -121,19 +121,27 @@
 								<div class="left">
 									<div class="detail">
 										<div class="detail__name">Project name</div>
-										<div class="detail__value">Gardenscapes</div>
+										<div class="detail__value">
+											<input type="text" class="input" value="Gardenscapes">
+										</div>
 									</div>
 									<div class="detail">
 										<div class="detail__name">Category</div>
-										<div class="detail__value">Games</div>
+										<div class="detail__value">
+											<input type="text" class="input" value="Games">
+										</div>
 									</div>
 									<div class="detail">
 										<div class="detail__name">Subcategory</div>
-										<div class="detail__value">Puzzle</div>
+										<div class="detail__value">
+											<input type="text" class="input" value="Puzzle">
+										</div>
 									</div>
 									<div class="detail">
 										<div class="detail__name">Language</div>
-										<div class="detail__value">English</div>
+										<div class="detail__value">
+											<input type="text" class="input" value="English">
+										</div>
 									</div>
 								</div>
 								<div class="right">
@@ -163,6 +171,17 @@
 		</div>
 	</div>
 
+	<script>
+		$('.edit').on('click', function() {
+			if ($(this).data('disabled')) {
+				$(this).data('disabled', false);
+				$('input').attr('disabled', false);
+			} else {
+				$(this).data('disabled', true);
+				$('input').attr('disabled', true);
+			}
+		});
+	</script>
 	<script src="js/index.js"></script>
 </body>
 </html>
