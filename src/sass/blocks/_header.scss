@@ -51,6 +51,7 @@
         .nav {
 
             &__item {
+                padding: 6px 0;
                 color: rgba(#111, .7);
                 font-size: 16px;
                 font-weight: bold;
@@ -75,17 +76,13 @@
                     }
                 }
 
+                &--signout {
+                    border-top: solid 1px rgba(#979797, .1);
+                }
+
                 &:hover {
                     color: #0fb55d;
                 }
-
-                &:not(:last-child) {
-                    margin-bottom: 12px;
-                }
-            }
-
-            &__link {
-                
             }
         }
 
