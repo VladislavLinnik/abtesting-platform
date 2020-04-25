@@ -78,6 +78,33 @@
             }
         }
 
+        .section {
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__title {
+                color: #121212;
+                font-size: 21px;
+                font-weight: 500;
+            }
+
+            &__action {
+                color: #16d275;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+
+                img {
+                    margin-right: 10px;
+                    height: 20px;
+                    width: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
         &.step1 {
             
             .actions {
@@ -102,37 +129,77 @@
             .action-wrap .input, .action-wrap .select {
                 width: 100%;
             }
+
+            .section {
+                margin-top: 30px;
+            }
+
+            .group {
+                margin-bottom: 35px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                    grid-gap: 15px;         
+                }
+
+                .label {
+                    margin-bottom: 5px;
+                    display: block;
+                }
+
+                &__column {
+
+                    &--asc {
+                        align-self: center;
+                    }
+
+                    &:first-of-type {
+                        margin-right: 35px;
+
+                        @media screen and (max-width: 768px) {
+                            margin-right: 0;       
+                        }
+                    }
+                }
+
+                &--screenshot {
+
+                    .select {
+                        width: 100%;
+                    }
+
+                    .screenshot {
+                        height: 180px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        box-shadow: 0 9px 18px -1px rgba(0, 0, 0, 0.11);
+
+                        &-img {
+                            height: 120px;
+                            width: 120px;
+                        }
+
+                        &-text {
+                            text-align: center;
+                            font-size: 14px;
+                            line-height: normal;
+
+                            .link {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &.step2 {
             color: rgba(#121212, .7);
-
-            .section {
-                margin-bottom: 35px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                &__title {
-                    color: #121212;
-                    font-size: 21px;
-                    font-weight: 500;
-                }
-
-                &__action {
-                    color: #16d275;
-                    font-size: 16px;
-                    font-weight: 500;
-                    cursor: pointer;
-
-                    img {
-                        margin-right: 10px;
-                        height: 20px;
-                        width: 20px;
-                        vertical-align: middle;
-                    }
-                }
-            }
 
             .label {
                 margin-bottom: 5px;
@@ -206,33 +273,12 @@
                     }
                 }
 
-                &--screenshot {
+                &--game {
 
-                    .select {
-                        width: 100%;
-                    }
-
-                    .screenshot {
-                        height: 180px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #fff;
-                        border-radius: 4px;
-                        box-shadow: 0 9px 18px -1px rgba(0, 0, 0, 0.11);
-
-                        &-img {
-                            height: 120px;
-                            width: 120px;
-                        }
-
-                        &-text {
-                            text-align: center;
-                            font-size: 14px;
-
-                            .link {
-                                color: $green;
-                            }
+                    @media screen and (max-width: 1024px) {
+                        
+                        .group__column:last-child {
+                            order: -1;
                         }
                     }
                 }
@@ -307,36 +353,6 @@
                     }
                 }
 
-                .group3-wrap {
-                    display: grid;
-                    grid-template-columns: 110px auto;
-                    grid-gap: 35px;
-
-                    @media screen and (max-width: 1024px) {
-                        grid-template-columns: 1fr;
-                        grid-gap: 15px;
-                    }
-                    
-                    .item {
-
-                        &:first-child {
-                            width: 110px;
-
-                            @media screen and (max-width: 1024px) {
-                                width: 100%;
-                            }
-                        }
-
-                        .input {
-                            width: 100%;
-                        }
-
-                        .select {
-                            width: 100%;
-                        }
-                    }
-                }
-
                 .group4-wrap {
                     
                     .languages {
@@ -393,123 +409,109 @@
                     }
                 }
 
-                .group6-wrap {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                .group3-wrap {
 
-                    @media screen and (max-width: 768px) {
-                        flex-direction: column;
-                        align-items: start;           
+                    .line--checkbox {
+                        margin-bottom: 30px;
                     }
 
-                    .rating {
-                        margin-left: 10px;
+                    .input-wrap {
+                        margin-bottom: 30px;
+                    }
+
+                    .btn {
+                        width: 330px;
 
                         @media screen and (max-width: 768px) {
-                            margin-top: 10px;
-                            margin-left: 0;
+                            width: 100%;
                         }
+                    }
+                }
 
-                        &-text {
+                &--rating {
+                    grid-template-columns: 1fr;
+
+                    .stars {
+
+                        &__title {
                             margin-bottom: 5px;
-                            font-size: 14px;
                         }
 
-                        &-stars {
-                            
+                        &__rating {
+                            display: flex;
+                            align-items: center;
 
-                            img {
+                            &-img {
                                 height: 20px;
                                 width: 20px;
                                 cursor: pointer;
 
                                 &:not(:last-child) {
-                                    margin-right: 4px;
+                                    margin-right: 2px;
                                 }
                             }
                         }
-                    }
-                }
-
-                .group7-wrap {
-
-                    .select {
-                        width: 100%;
                     }
 
                     .rating {
-                        margin-top: 30px;
-
-                        &-text {
+    
+                        &__title {
                             margin-bottom: 5px;
-                            font-size: 14px;
                         }
-
-                        &-stars {
-                            
-
-                            img {
-                                height: 20px;
-                                width: 20px;
-                                cursor: pointer;
-
-                                &:not(:last-child) {
-                                    margin-right: 4px;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .rating {
-
-                    &__title {
-                        margin-bottom: 5px;
-                    }
-
-                    &__counters {
-                        display: flex;
-                        align-items: center;
-
-                        @media screen and (max-width: 768px) {
-                            display: grid;
-                            grid-template-columns: 1fr;
-                            grid-gap: 15px;
-                        }
-
-                        .counter {
-                            width: 110px;
-
+    
+                        &__counters {
+                            display: flex;
+                            align-items: center;
+    
                             @media screen and (max-width: 768px) {
-                                width: 100%;   
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                grid-gap: 15px;
                             }
-
-                            &__stars {
-                                margin-bottom: 5px;
-                                display: flex;
-                                justify-content: center;
-
-                                img {
-                                    height: 20px;
-                                    width: 20px;
-                                    cursor: pointer;
+    
+                            .counter {
+                                width: 110px;
+    
+                                @media screen and (max-width: 768px) {
+                                    width: 100%;   
                                 }
-                            }
+    
+                                &__stars {
+                                    margin-bottom: 5px;
+                                    display: flex;
+                                    justify-content: center;
+    
+                                    img {
+                                        height: 20px;
+                                        width: 20px;
+                                        cursor: pointer;
 
-                            &__input {
-                                width: 100%;
+                                        &:not(:last-child) {
+                                            margin-right: 2px;
+                                        }
+                                    }
+                                }
+    
+                                &__input {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            .add-answer {
-                margin-bottom: 40px;
-                color: #16d275;
-                font-size: 16px;
-                font-weight: bold;
+                .game__img {
+                    border-radius: 10px;
+                    overflow: hidden;
+
+                    @media screen and (max-width: 1024px) {
+                        text-align: center;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
             }
         }
 
@@ -527,6 +529,7 @@
                 }
 
                 .label {
+                    margin-bottom: 5px;
                     display: block;
                 }
 
@@ -568,6 +571,7 @@
                         &-text {
                             text-align: center;
                             font-size: 14px;
+                            line-height: normal;
 
                             .link {
                                 color: $green;
