@@ -47,9 +47,13 @@
 .btn {
     height: 50px;
     background-color: #0fb55d;
-    background-image: linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
-    background-image: -webkit-linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
-    background-image: -moz-linear-gradient(274deg, #0c994e 109%, #0fb55d 24%);
+    background-image: -moz-linear-gradient(0deg, #0fb55d 0%, #0c994e 100%); /* ff3.6+ */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #0fb55d), color-stop(100%, #0c994e)); /* safari4+,chrome */
+    background-image: -webkit-linear-gradient(0deg, #0fb55d 0%, #0c994e 100%); /* safari5.1+,chrome10+ */
+    background-image: -o-linear-gradient(0deg, #0fb55d 0%, #0c994e 100%); /* opera 11.10+ */
+    background-image: -ms-linear-gradient(0deg, #0fb55d 0%, #0c994e 100%); /* ie10+ */
+    background-image: linear-gradient(90deg, #0fb55d 0%, #0c994e 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0fb55d', endColorstr='#0c994e',GradientType=1 ); /* ie6-9 */
     color: #fff;
     text-align: center;
     font-size: 16px;

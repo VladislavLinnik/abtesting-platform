@@ -23,7 +23,7 @@
 	<!-- SCRIPTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-	<title>Create experiment step 3 | AB Tools Platform</title>
+	<title>Project edit (with link) | AB Tools Platform</title>
 </head>
 <body>
 	<header class="header">
@@ -88,72 +88,63 @@
 			</aside>
 			<div class="page">
 				<div class="page__top">
-					<div class="space-between create-experiment">
-						<h2 class="title">Create a new experiment</h2>
-						<div class="steps">
-							<div class="step active">
-								<a href="create_experiment_step1.html" class="step__text">Step #1</a>
-								<div class="step__sign active"></div>
-							</div>
-							<div class="step active">
-								<a href="create_experiment_step2.html" class="step__text">Step #2</a>
-								<div class="step__sign active"></div>
-							</div>
-							<div class="step active">
-								<a href="" class="step__text">Step #3</a>
-								<div class="step__sign"></div>
-							</div>
-						</div>
-					</div>
+					<h2 class="title">Edit a project</h2>
 				</div>
 				<main class="main">
 					<ul class="main__menu">
-						<li class="menu__item">
-							<a href="#" class="menu__link">Projects</a>
-						</li>
 						<li class="menu__item active">
+							<a href="projects.html" class="menu__link">Projects</a>
+						</li>
+						<li class="menu__item">
 							<a href="experiments.html" class="menu__link">Experiments</a>
 						</li>
 					</ul>
-					<div class="main__info experiment">
-						<div class="experiment__create step3">
-							<div class="group group--screenshot">
-								<div class="group__column group__column--asc">
-									<label class="label">Variant A</label>
-									<select class="select">
-										<option>Qwe</option>
-										<option>Qwe</option>
-										<option>Qwe</option>
-									</select>
-								</div>
-								<div class="group__column">
-									<div class="screenshot">
-										<img class="screenshot-img" src="./img/picture.png">
+					<div class="main__info project">
+						<div class="project__edit">
+							<div class="info">
+								<h3 class="info__title">Choose Store *</h3>
+								<div class="info__wrap">
+									<div class="image">
+										<img src="./img/project1.png" class="image__picture">
+										<p class="image__text">Only .png 512x512</p>
 									</div>
 								</div>
 							</div>
-							<div class="group group--screenshot">
-								<div class="group__column group__column--asc">
-									<label class="label">Variant B</label>
+							<form class="form">
+								<div class="form__elem">
+									<label class="form__elem-label">Project name</label>
+									<input type="text" class="form__elem-input input" value="Gardenscapes">
+								</div>
+								<div class="form__elem">
+									<label class="form__elem-label">Link in store</label>
+									<input type="text" class="form__elem-input input" disabled value="https://play.google.com/store/apps/details?id=com.netflix.mediaclient">
+								</div>
+								<div class="form__elem">
+									<label class="form__elem-label">Category</label>
 									<select class="select">
-										<option>Qwe</option>
-										<option>Qwe</option>
-										<option>Qwe</option>
+										<option>Games</option>
+										<option>Games</option>
+										<option>Games</option>
 									</select>
 								</div>
-								<div class="group__column">
-									<div class="screenshot">
-										<div class="screenshot-text">Upload screenshots by dropping out <br> 
-											or <a class="link">brows for them</a>
-										</div>
-									</div>
+								<div class="form__elem">
+									<label class="form__elem-label">Subcategory</label>
+									<select class="select">
+										<option>Puzzle</option>
+										<option>Puzzle</option>
+										<option>Puzzle</option>
+									</select>
 								</div>
-							</div>
-							<div class="step__control">
-								<button class="btn">Add to draft</button>
-								<button onclick="location.href='experiments_fill.html'" class="btn">Create and Run experiment</button>
-								<a href="create_experiment_step2.html" class="link-previous">Back to previous step</a>
-							</div>
+								<div class="form__elem">
+									<label class="form__elem-label">Language</label>
+									<select class="select">
+										<option>English</option>
+										<option>English</option>
+										<option>English</option>
+									</select>
+								</div>
+							</form>
+							<button class="btn" onclick="location.href='projects_fill.html'">Change</button>
 						</div>
 					</div>
 				</main>

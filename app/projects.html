@@ -106,7 +106,7 @@
 				<main class="main">
 					<ul class="main__menu">
 						<li class="menu__item active">
-							<a href="#" class="menu__link">Projects</a>
+							<a href="" class="menu__link">Projects</a>
 						</li>
 						<li class="menu__item">
 							<a href="experiments.html" class="menu__link">Experiments</a>
@@ -121,7 +121,7 @@
 						<div class="project__create" style="display: none;">
 							<h2 class="project__create-text">Add link from Apple Store or Google Play</h2>
 							<div class="project__create-method">
-								<input class="input" type="text" placeholder="Past your URL">
+								<input class="input js-projectLinkInput" type="text" placeholder="Past your URL">
 								<a href='project_create.html' class="manually">or &nbsp; &nbsp; &nbsp;<span class="create-manually js-openCreateManually">Create manually</span></a>
 							</div>
 							<button class="btn js-openCreateProject">Confirm</button>
@@ -181,6 +181,9 @@
 		});
 
 		$('.js-openCreateProject').click(function(){
+			if ($('.js-projectLinkInput').val()) {
+				location.href = "project_edit_with_link.html";
+			}
 			$('.popup, .popup__overlay').fadeIn(400); 
 		});
 

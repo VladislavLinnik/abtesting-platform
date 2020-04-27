@@ -183,6 +183,12 @@
 		</div>
 	</div>
 
+	<script>
+		$('.stores .store').on('click', function() {
+			$('.stores .store').removeClass('active');
+			$(this).addClass('active');
+		});
+	</script>
 	<script src="js/index.js"></script>
 </body>
 </html>
