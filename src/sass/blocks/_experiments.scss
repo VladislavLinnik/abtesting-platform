@@ -343,6 +343,14 @@
                             }
                         }
 
+                        &--currencies {
+                            font-size: 0;
+
+                            .input {
+                                font-size: 18px;
+                            }
+                        }
+
                         &--counters {
                             display: flex;
 
